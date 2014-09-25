@@ -1,3 +1,8 @@
 <header>Hello, and welcome to the PITT!</header>
-<body><p Team = Team.all> </p></body>
+<% Team.all.each do |team|%>
+<p>Name: <%= "#{team.city} #{team.name}"%></p> <!--this is an interpolation -->
+
+
+<%end%>
+
 <%= link_to "Logout", :destroy_user_session, method: :delete %>
