@@ -1,8 +1,11 @@
 <header>Hello, and welcome to the PITT!</header>
-<% Team.all.each do |team|%>
-<p>Name: <%= "#{team.city} #{team.name}"%></p> <!--this is an interpolation -->
-
-
-<%end%>
-
 <%= link_to "Logout", :destroy_user_session, method: :delete %>
+
+<%= form_tag(controller: "home", action: "submit_picks") do %>
+<% Game.all.each do |game| %>
+  <input type = "radio" name = "Game<%=game.id%>" value = <%= game.home_team.name %>><%= image_tag(game.home_team.logo) %><%= "#{game.home_team.city} #{game.home_team.name}" %> 
+  <input type = "radio" name = "Game<%=game.id%>" value = <%= game.away_team.name %>><img src="/assets/<%= game.away_team.logo %>"><%= "#{game.away_team.city} #{game.away_team.name}" %><br>
+<% end %>
+<input type = "submit" value = "Submit Picks"></input>
+<% end %>
+ <!--this is an interpolation -->
