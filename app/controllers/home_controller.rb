@@ -7,3 +7,4 @@ before_action :authenticate_user!
   	redirect_to :back
   end
 end
+#hello
