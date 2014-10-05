@@ -33,7 +33,7 @@ task :twenty_fourteen_season => :environment do
   cardinals = Team.find_by(name: "Cardinals")
 
 
-
+#week 1
   Game.create(home_team_id: packers.id, away_team_id: seahawks.id, kickoff: DateTime.parse("2014/9/4 20.30"))
   Game.create(home_team_id: bills.id, away_team_id: bears.id, kickoff: DateTime.parse("2014/9/7 13:00"))
   Game.create(home_team_id: bengals.id, away_team_id: ravens.id, kickoff: DateTime.parse("2014/9/7 13:00"))
@@ -50,6 +50,27 @@ task :twenty_fourteen_season => :environment do
   Game.create(home_team_id: colts.id, away_team_id: broncos.id, kickoff: DateTime.parse("2014/9/7 20:30"))
   Game.create(home_team_id: giants.id, away_team_id: lions.id, kickoff: DateTime.parse("2014/9/8 19:10"))
   Game.create(home_team_id: chargers.id, away_team_id: cardinals.id, kickoff: DateTime.parse("2014/9/8 22:20"))
+
+#week 2
+  Game.create(home_team_id: ravens.id, away_team_id: steelers.id, kickoff: DateTime.parse("2014/9/11 20:25"))
+  Game.create(home_team_id: panthers.id, away_team_id: lions.id, kickoff: DateTime.parse("2014/9/14 13:00"))
+  Game.create(home_team_id: giants.id, away_team_id: cardinals.id, kickoff: DateTime.parse("2014/9/14 13:00"))
+  Game.create(home_team_id: redskins.id, away_team_id: jaguars.id, kickoff: DateTime.parse("2014/9/14 13:00"))
+  Game.create(home_team_id: bengals.id, away_team_id: falcons.id, kickoff: DateTime.parse("2014/9/14 13:00"))
+  Game.create(home_team_id: titans.id, away_team_id: cowboys.id, kicoff: DateTime.parse("2014/9/14 13:00"))
+  Game.create(home_team_id: vikings.id, away_team_id: patriots.id, kickoff: DateTime.parse("2014/9/14 13:00"))
+  Game.create(home_team_id: browns.id, away_team_id: saints.id, kickoff: DateTime.parse("2014/9/14 13:00"))
+  Game.create(home_team_id: bills.id, away_team_id: dolphins.id, kickof: DateTime.parse("2014/9/14 13:00"))
+  Game.create(home_team_id: buccaneers.id, away_team_id: rams.id, kickoff: DateTime.parse("2014/9/14 16:05"))
+  Game.create(home_team_id: chargers.id, away_team_id: seahawks.id, kickoff: DateTime.parse("2014/9/14 16:05"))
+  Game.create(home_team_id: raiders.id, away_team_id: texans.id, kickoff: DateTime.parse("2014/9/14 16:45"))
+  Game.create(home_team_id: packers.id, away_team_id: jets.id, kickoff: DateTime.parse("2014/9/14 16:45"))
+  Game.create(home_team_id: broncos.id, away_team_id: chiefs.id, kickoff: DateTime.parse("2014/9/14 16:25"))
+  Game.create(home_team_id: fortyniners.id, away_team_id: bears.id, kickoff: DateTime.parse("2014/9/14 20:30"))
+  Game.create(home_team_id: colts.id, away_team_id: eagles.id, kickoff: DateTime.parse("2014/9/15 20:30")
+
+
+
 
 
 end
