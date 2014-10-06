@@ -88,6 +88,14 @@ task :twenty_fourteen_season => :environment do
   Game.create(home_team_id: panthers.id, away_team_id: steelers.id, kickoff: DateTime.parse("2014/9/21 20:30"))
   Game.create(home_team_id: jets.id, away_team_id: bears.id, kickoff: DateTime.parse("2014/9/22 20:30"))
 
+#week 4
+  Game.create(home_team_id: redskins.id, away_team_id: giants.id, kickoff: DateTime.parse("2014/9/25 20:25"))
+  Game.create(home_team_id: jets.id, away_team_id: lions.id, kickoff: DateTime.parse("2014/9/28 13:00"))
+  Game.create(home_team_id: colts.id, away_team_id: titans, kickoff: DateTime.parse("2014/9/28 13:00"))
+  Game.create(home_team_id: steelers.id, away_team_id: buccaneers.id, kickoff: DateTime.parse("2014/9/28 13:00"))
+  Game.create(home_team_id: ravens.id, away_team_id: panthers.id, kickoff: DateTime.parse("2014/9/28 13:00"))
+  Game.create(home_team_id: texans.id, away_team-id: bills.id, kickoff: DateTime.parse("2014/9/28 13:00"))
+
 
 
 
