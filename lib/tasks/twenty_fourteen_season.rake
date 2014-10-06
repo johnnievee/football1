@@ -70,6 +70,25 @@ task :twenty_fourteen_season => :environment do
   Game.create(home_team_id: colts.id, away_team_id: eagles.id, kickoff: DateTime.parse("2014/9/15 20:30")
 
 
+#week 3
+  Game.create(home_team_id: falcons.id, away_team_id: buccaneers.id, kickoff: DateTime.parse("2014/9/18 20:25"))
+  Game.create(home_team_id: bengals.id, away_team_id: titans.id, kickoff: DateTime.parse("2014/9/21 13:00"))
+  Game.create(home_team_id: bills.id, away_team_id: chargers.id, kickoff: DateTime.parse("2014/9/21 13:00"))
+  Game.create(home_team_id: lions.id, away_team_id: packers, kickoff: DateTime.parse("2014/9/21 13:00"))
+  Game.create(home_team_id: giants.id, away_team_id: texans.id, kickoff: DateTime.parse("2014/9/21 13:00"))
+  Game.create(home_team_id: saints.id, away_team_id: vikings.id, kickoff: DateTime.parse("2014/9/21 13:00"))
+  Game.create(home_team_id: browns.id, away_team_id: ravens.id, kickoff: DateTime.parse("2014/9/21 13:00"))
+  Game.create(home_team_id: rams.id, away_team_id: cowboys.id, kickoff: DateTime.parse("2014/9/21 13:00"))
+  Game.create(home_team_id: jaguars.id, away_team_id: colts.id, kickoff: DateTime.parse("2014/9/21 13:00"))
+  Game.create(home_team_id: eagles.id, away_team_id: redskins.id, kickoff: DateTime.parse("2014/9/21 13:00"))
+  Game.create(home_team_id: patriots.id, away_team_id: raiders.id, kickoff: DateTime.parse("2014/9/21 13:00"))
+  Game.create(home_team_id: cardinals.id away_team_id: fortyniners.id, kickoff: DateTime.parse("2014/9/21 16:05")
+  Game.create(home_team_id: dolphins.id, away_team_id: chiefs.id, kickoff: DateTime.parse("2014/9/21 16:25"))
+  Game.create(home_team_id: seahawks.id, away_team_id: broncos.id, kickoff: DateTime.parse("2014/9/21 16:25"))
+  Game.create(home_team_id: panthers.id, away_team_id: steelers.id, kickoff: DateTime.parse("2014/9/21 20:30"))
+  Game.create(home_team_id: jets.id, away_team_id: bears.id, kickoff: DateTime.parse("2014/9/22 20:30"))
+
+
 
 
 
